@@ -40,7 +40,7 @@ export default useSignup;
 
 function handleInputErrors({ fullName, username, password, confirmPassword, gender }) {
     if (!fullName || !username || !password || !confirmPassword || !gender) {
-        toast.error("Please fill in all fields");
+        toast.error("Please fill in all fields!!");
         return false;
     }
 

@@ -26,7 +26,7 @@ function SignUp() {
         <div className='flex flex-col items-center justify-center min-w-96 mx-auto'>
             <div className='w-full p-6 rounded-lg shadow-md bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0'>
                 <h1 className='text-3xl font-semibold text-center text-gray-300'>
-                    Sign Up <span className='text-blue-500'> ChatApp</span>
+                    Sign Up <span className='text-red-600'>to</span>  <span className='text-blue-500 italic'>Whisper</span>
                 </h1>
 
                 <form onSubmit={handleSubmit}>
@@ -36,7 +36,7 @@ function SignUp() {
                         </label>
                         <input
                             type='text'
-                            placeholder='John Doe'
+                            placeholder='Enter Fullname'
                             className='w-full input input-bordered  h-10'
                             value={inputs.fullName}
                             onChange={(e) => setInputs({ ...inputs, fullName: e.target.value })}
@@ -48,7 +48,7 @@ function SignUp() {
                         </label>
                         <input
                             type='text'
-                            placeholder='johndoe'
+                            placeholder='Enter Username'
                             className='w-full input input-bordered h-10'
                             value={inputs.username}
                             onChange={(e) => setInputs({ ...inputs, username: e.target.value })}
@@ -85,7 +85,7 @@ function SignUp() {
                     <GenderCheckbox onCheckboxChange={handleCheckboxChange} selectedGender={inputs.gender} />
 
                     <Link
-                        className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block'
+                        className='text-sm hover:underline hover:text-blue-600 mt-2 inline-block text-gray-400'
                         to='/login'
                     >
                         Already have an account?
